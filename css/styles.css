@@ -1,0 +1,195 @@
+/* Variables */
+
+:root {
+  --text-main-color: #434455;
+  --text-title-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --text-second-color: #fff;
+  --button-color: #f4f4fd;
+  --button-hover-color: #404bbf;
+  --button-border-color: #e7e9fc;
+}
+
+/* Hidden headers */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Lists basic style */
+
+.list {
+  list-style: none;
+  padding-left: inherit;
+}
+
+/* Links basic style */
+
+a {
+  text-decoration: none;
+}
+
+/* Body basic style */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--text-color-site);
+
+  background-color: var(--background-site);
+}
+
+/* Text styles */
+
+.text-main {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-main-color);
+}
+
+.text-title-big {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.text-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-title-color);
+}
+
+/* Buttons */
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+
+.button.primary {
+  padding: 16px 32px;
+
+  color: var(--text-second-color);
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.button.secondary {
+  padding: 12px 24px;
+
+  color: var(--accent-color);
+
+  background-color: var(--button-color);
+  border: 1px solid var(--button-border-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--button-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+}
+
+/* Logo */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-logo {
+  color: var(--text-title-color);
+}
+
+.footer-logo {
+  color: var(--button-color);
+}
+
+.logo .accent {
+  color: var(--accent-color);
+}
+
+/* Site nav and address */
+
+.nav-list a {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-title-color);
+}
+
+.address-list a {
+  font-style: normal;
+  color: var(--text-title-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current,
+.address-link:hover,
+.address-link:focus {
+  color: var(--button-hover-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--text-title-color);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--text-second-color);
+}
+
+/* Team section */
+
+.team {
+  background-color: var(--button-color);
+}
+
+.team-item {
+  background-color: var(--text-second-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--text-title-color);
+}
+
+/* .footer-logo {
+  color: var(--button-color);
+} */
+.footer-text {
+  color: var(--button-border-color);
+}
