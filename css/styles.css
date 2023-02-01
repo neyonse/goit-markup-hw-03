@@ -10,25 +10,47 @@
   --button-border-color: #e7e9fc;
 }
 
+/* Body basic style */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--text-color-site);
+}
+
+.container {
+  width: 1158px;
+
+  padding: 0 15px;
+  margin: 0 auto;
+
+  outline: 1px solid crimson;
+}
+
 /* Hidden headers */
 .visually-hidden {
   position: absolute;
-  white-space: nowrap;
+
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  border: 0;
   padding: 0;
+  margin: -1px;
+  overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  margin: -1px;
+
+  white-space: nowrap;
+
+  border: 0;
 }
 
 /* Lists basic style */
 
-.list {
+ul {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
-  padding-left: inherit;
 }
 
 /* Links basic style */
@@ -37,34 +59,40 @@ a {
   text-decoration: none;
 }
 
-/* Body basic style */
+/* Sections basic style */
 
-body {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.02em;
-  color: var(--text-color-site);
-
-  background-color: var(--background-site);
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* Text styles */
 
 .text-main {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-main-color);
 }
 
 .text-title-big {
+  margin-top: 0;
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
+  color: var(--text-title-color);
   text-align: center;
   text-transform: capitalize;
 }
 
 .text-title {
-  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.2;
   color: var(--text-title-color);
 }
@@ -72,9 +100,11 @@ body {
 /* Buttons */
 
 .button {
-  font-family: inherit;
+  display: inline-block;
+
   font-weight: 500;
   letter-spacing: 0.04em;
+
   border-radius: 4px;
 }
 
@@ -84,8 +114,8 @@ body {
   color: var(--text-second-color);
 
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.secondary {
@@ -99,31 +129,39 @@ body {
 
 .button.primary:hover,
 .button.primary:focus {
-  background-color: var(--button-hover-color);
   cursor: pointer;
+
+  background-color: var(--button-hover-color);
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--button-color);
+  cursor: pointer;
 
+  background-color: var(--button-hover-color);
+  border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: none;
-  background-color: var(--button-hover-color);
-  cursor: pointer;
+}
+
+/* Header padding */
+
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Logo */
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
   font-size: 18px;
+  font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav-logo {
@@ -162,13 +200,24 @@ body {
 /* Hero */
 
 .hero {
+  text-align: center;
+
   background-color: var(--text-title-color);
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
   color: var(--text-second-color);
+}
+
+/* Services section */
+
+.services {
+  padding-top: 0;
 }
 
 /* Team section */
@@ -183,13 +232,13 @@ body {
 
 /* Footer */
 
-.footer {
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background-color: var(--text-title-color);
 }
 
-/* .footer-logo {
-  color: var(--button-color);
-} */
 .footer-text {
   color: var(--button-border-color);
 }
