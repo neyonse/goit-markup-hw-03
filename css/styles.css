@@ -179,11 +179,13 @@ img {
 
 /* Site nav and address */
 
+header {
+  border-bottom: 1px solid var(--button-border-color);
+}
+
 .nav-flex {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid var(--button-border-color);
 }
 
 .nav {
@@ -358,14 +360,16 @@ img {
     (100% - var(--cards-gap) * (var(--portfolio-item-number) - 1)) /
       var(--portfolio-item-number)
   );
-
-  border: 1px solid var(--button-border-color);
 }
 
 .portfolio-item-description {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+
+  border-right: 1px solid var(--button-border-color);
+  border-bottom: 1px solid var(--button-border-color);
+  border-left: 1px solid var(--button-border-color);
 }
 
 /* Footer */
