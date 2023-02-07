@@ -85,16 +85,6 @@ img {
   color: var(--text-main-color);
 }
 
-.text-title-big {
-  margin: 0;
-  margin-bottom: 72px;
-
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--text-title-color);
-  text-align: center;
-}
-
 .text-title {
   margin: 0;
   margin-bottom: 8px;
@@ -102,7 +92,19 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--text-title-color);
+}
+
+.text-title-big {
+  margin: 0;
+  margin-bottom: 72px;
+
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--text-title-color);
+  text-align: center;
 }
 
 /* Buttons */
